@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Hotel } from '../../../models/hotel';
 
 @Component({
   selector: 'ng-hotel',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HotelComponent implements OnInit {
 
+  @Input() hotel: Hotel;
   constructor() { }
 
   ngOnInit() {
