@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 import { HotelService } from './services/hotel.service';
 
 
@@ -21,7 +22,8 @@ import { FinderComponent } from './finder/finder.component';
     FinderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   providers: [HotelService],
   bootstrap: [AppComponent]
